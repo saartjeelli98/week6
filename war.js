@@ -34,7 +34,7 @@ class Deck{ //defining the deck and what you can do with it
     }
 
     shuffle(){
-        for (let i = this.cards.length - 1; i > 0; i--){ // why is it i-- and not i++?
+        for (let i = this.cards.length - 1; i > 0; i--){ 
             let b = Math.floor(Math.random() * i); //math.random will make a random number; 
             let hand = this.cards[i]; //a hand will be each card iterated
             this.cards[i] = this.cards[b];
@@ -109,11 +109,11 @@ class Game{ //to define the game and what happens within it
     }
     }
 
-    startGame(){ //needs to initialize the game? 
+    startGame(){ //needs to initialize the game
         this.gamePlayers.push(player1); //adds one player to the game
         this.gamePlayers.push(player2); //adds another player to the game
         let game = new Deck();
-        game.makeDeck();
+        game.makeDeck();//starting all the methods
         game.shuffle();
         console.log(game.cards);
         game.deal(player1, player2);
