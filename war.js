@@ -17,6 +17,8 @@ class Cards{ //how to define the cards
     }
 }
 
+
+
 class Deck{ //defining the deck and what you can do with it
     constructor(cards){
         this.cards = []; //to create an array that holds the cards

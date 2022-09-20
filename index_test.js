@@ -14,8 +14,9 @@ var expect = chai.expect;
 describe('make cards', function() {
     describe('#makeDeck', function() {
         it('should make a deck of cards', function(){
-            const x = new Cards();
-            expect(x).to.equal(52);
+            const x = new Deck();
+            x.makeDeck(); //to call it
+            expect(x.cards.length).to.equal(52);
         });
     });
 });
